@@ -1,0 +1,45 @@
+canvas {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  touch-action: none;
+  width: 100%;
+  z-index: -1;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  width: 50%;
+  height: 100%;
+  min-height: calc(100vh - 20px);
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.map, iframe {
+  min-height: calc(100vh - 20px);
+}
+
+.btn {
+    margin: 20px auto;
+    top: 8px;
+    right: calc(50% + 100px);
+    position: absolute;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 800;
+    color: #666;
+    font-family: Arial;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    background: white;
+    cursor: pointer;
+}
